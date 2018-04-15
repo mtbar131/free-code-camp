@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wiki Viewer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="vertical-center">
+        <div class="container" id="searchBox">
+            <h2>Use the input below to search Wikipedia:</h2>
+            <form>
+                <input class="form-control mb-2" type="text" id="userInput" name="userInput">
+                <a id="searchButton" class="btn btn-dark" href="#">Search for articles</a>
+                <a id="randomButton" class="btn btn-danger" href="#">Read a random article</a>
+            </form>
+        </div>
+        <div class="container" style="display:none" id="resultsBox">
+            <div class="list-group" id="results">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>

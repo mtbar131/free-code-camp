@@ -14,3 +14,5 @@
 * File metadata: https://metadata-microservice-fcc.herokuapp.com/
 * URL shortener: https://url-shortener-host.herokuapp.com/
 * Poll creator: https://poll-creator.herokuapp.com/
+
+> **Needs active Bing api key

@@ -1,0 +1,43 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+  
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#quote {
+  font-size: 17.5px;
+}
+
+#author {
+  font-size: 15px;
+}
+
+button {
+  font: inherit;
+  font-size: 15px;
+  border-color: white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 6px 20px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 6px 20px -9px rgba(0,0,0,0.75);
+box-shadow: -1px 6px 20px -9px rgba(0,0,0,0.75);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#container {
+  margin-top: 25vh;
+  margin-left: 12.5vw;
+  margin-right: 12.5vw;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Simon</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-3 text-center mt-5 mb-4">Bootstrap Simon</h1>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-block btn-success p-5 m-2" id="target1"></button>
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-danger p-5 m-2" id="target2"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-block btn-warning p-5 m-2" id="target3"></button>
+            </div>
+            <div class="col">
+                <button class="btn btn-block btn-primary p-5 m-2" id="target4"></button>
+            </div>
+        </div>
+        <p class="lead text-center mt-4">Turn: <span id="turn">Computer</span></p>
+        <p class="lead text-center">Round: <span id="round">1</span></p>
+        <div class="text-center">
+            <button class="btn btn-secondary" id="strict">Use strict</button>
+        </div>
+        <div class="text-center mt-4">
+            <small><a href="https://github.com/MattPKobus/bootstrap-simon" target="_blank">View Source</a> | Coded and designed by <a href="https://github.com/MattPKobus" target="_blank">Matt Kobus</a></small>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

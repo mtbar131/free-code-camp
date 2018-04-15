@@ -1,0 +1,49 @@
+body {
+    background-color: #6441a5;
+}
+
+hr {
+    border-color: #fff;
+}
+
+.card {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 470px;
+}
+
+.btn {
+    border-color: #6441a5;
+    color: #6441a5;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #6441a5;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.cred {
+    font-size: .80em;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.cred-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cred-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.cred-link:visited {
+  color: #fff;
+}

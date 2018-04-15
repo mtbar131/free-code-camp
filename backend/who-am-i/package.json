@@ -1,0 +1,14 @@
+{
+  "name": "whoami",
+  "version": "1.0.0",
+  "description": "Returns information about visitor",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Matt Kobus",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

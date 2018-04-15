@@ -1,0 +1,17 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Takes in url and outputs shortened version",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Matt Kobus",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.12"
+  }
+}

@@ -1,0 +1,11 @@
+<h2>Results | <span id="recent"><a href="/recent" target="_blank">View recent searches</a></span></h2>
+{{#each results}}
+<div class="result">
+    <h5 class="result-title">{{title}}</h5>
+    <a class="result-link" href="{{link}}" target="_blank">View</a>
+</div>
+{{/each}}
+
+{{#if showNext}}
+<button class="pagin"><a class="next-link" href="{{nextLink}}">Next</a></button>
+{{/if}}

@@ -1,0 +1,15 @@
+{
+  "name": "metadata",
+  "version": "1.0.0",
+  "description": "File metadata microservice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Matt Kobus",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "multer": "^1.3.0"
+  }
+}

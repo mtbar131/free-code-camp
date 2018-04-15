@@ -1,0 +1,21 @@
+<a class="btn btn-primary mb-3" href="/private">Dashboard</a>
+<a class="btn btn-secondary mb-3" href="/public">Polls</a>
+{{#each polls}}
+
+<div class="card card-body w-75 mb-2">
+    {{title}}
+    <small>Total votes: {{totalVotes}}</small>
+    <small>{{date}}</small>
+    
+    <div class="col-md-2 ml-auto" id="button-container">
+        <a class="btn btn-secondary btn-block text-light mb-1" href="/edit/{{id}}">Edit</a>
+        <form action="/polls/{{id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="submit" class="btn btn-danger btn-block text-light" value="Delete">
+        </form>
+    </div>
+</div>
+
+{{else}}
+<p>No polls exist, click <a href="/create">here</a> to create one</p>
+{{/each}}

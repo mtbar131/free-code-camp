@@ -1,0 +1,18 @@
+{{#if user}}
+<a class="btn btn-primary mb-3" href="/private">Dashboard</a>
+<a class="btn btn-secondary mb-3" href="/public">Polls</a>
+{{/if}}
+
+{{#each polls}}
+
+<div class="card card-body w-75 mb-2">
+    <span>
+    {{title}}
+    <a class="btn btn-dark float-right" href="/vote/{{id}}">Voting Page</a>
+    <a class="btn btn-info float-right mr-1" href="/results/{{id}}">See Results</a>
+    </span>
+</div>
+
+{{else}}
+<p>No polls exist</p>
+{{/each}}

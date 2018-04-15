@@ -1,0 +1,150 @@
+<div class="row">
+    <div class="col-md-2">
+        <a class="btn btn-danger text-light btn-block" href="/public">Back</a>
+    </div>
+    <div class="col-md-10">
+        <div class="card card-body mb-3">
+            <h5 id="myTitle">{{poll.title}}</h5>
+            <small>Total votes: {{poll.totalVotes}}</small>
+            <br>
+
+            <canvas id="myChart"></canvas>
+
+        </div>
+
+    </div>
+</div>
+
+{{!--Hidden div for passing values to view engine--}}
+<div style="display:none">
+    <p class="option">{{poll.options.A}}</p>
+    <p class="option">{{poll.options.B}}</p>
+    <p class="option">{{poll.options.C}}</p>
+    <p class="option">{{poll.options.D}}</p>
+    <p class="score">{{poll.score.A}}</p>
+    <p class="score">{{poll.score.B}}</p>
+    <p class="score">{{poll.score.C}}</p>
+    <p class="score">{{poll.score.D}}</p>
+</div>
+
+
+
+<script>
+
+    // General setup
+    let myChart = document.getElementById('myChart').getContext('2d');
+    Chart.defaults.global.defaultFontFamily = 'Montserrat';
+    Chart.defaults.global.defaultFontSize = 14;
+    
+    // Grab values 
+    var options = document.querySelectorAll('.option');
+    var scores = document.querySelectorAll('.score');
+    
+    // Instantiate
+    if (options[3].innerHTML && scores[3].innerHTML) {
+        // Both C and D exist
+        let resultsChart = new Chart(myChart, {
+        type: 'pie', 
+        data: {
+            labels: [options[0].innerHTML, options[1].innerHTML, options[2].innerHTML, options[3].innerHTML],
+            datasets: [{
+                label: 'Votes',
+                data: [
+                    scores[0].innerHTML,
+                    scores[1].innerHTML,
+                    scores[2].innerHTML,
+                    scores[3].innerHTML
+                ],
+                backgroundColor: ['#dc3545',
+                    '#007bff',
+                    '#28a745',
+                    '#ffc107'
+
+                ]
+            }]
+        },
+        options: {
+            title: {
+                display: false
+            },
+            legend: {
+                display: true,
+                position: 'left'
+            },
+            tooltips: {
+                enabled: true
+            }
+        }
+    });
+        
+    }
+    else if (options[2].innerHTML && scores[2].innerHTML) {
+        // Only C exist
+        let resultsChart = new Chart(myChart, {
+        type: 'pie', 
+        data: {
+            labels: [options[0].innerHTML, options[1].innerHTML, options[2].innerHTML],
+            datasets: [{
+                label: 'Votes',
+                data: [
+                    scores[0].innerHTML,
+                    scores[1].innerHTML,
+                    scores[2].innerHTML
+                    
+                ],
+                backgroundColor: ['#dc3545',
+                    '#007bff',
+                    '#28a745'
+
+                ]
+            }]
+        },
+        options: {
+            title: {
+                display: false
+            },
+            legend: {
+                display: true,
+                position: 'left'
+            },
+            tooltips: {
+                enabled: true
+            }
+        }
+    });
+    }
+    else {
+        // C and D do not exist
+        let resultsChart = new Chart(myChart, {
+        type: 'pie',
+        data: {
+            labels: [options[0].innerHTML, options[1].innerHTML],
+            datasets: [{
+                label: 'Votes',
+                data: [
+                    scores[0].innerHTML,
+                    scores[1].innerHTML
+                ],
+                backgroundColor: [
+                    '#dc3545',
+                    '#007bff'
+
+                ]
+            }]
+        },
+        options: {
+            title: {
+                display: false
+            },
+            legend: {
+                display: true,
+                position: 'left'
+            },
+            tooltips: {
+                enabled: true
+            }
+        }
+    });
+    }
+    
+</script>

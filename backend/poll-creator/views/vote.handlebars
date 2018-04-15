@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-2">
+        <a class="btn btn-danger btn-block" href="/public">Back</a>
+    </div>
+    <div class="col-md-10">
+        <div class="card card-body">
+            <form action="/vote/{{poll.id}}?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+            <h5 class="mb-3">{{poll.title}}</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="options" value="optionA" checked>
+                <label class="form-check-label" for="optionA">
+                {{poll.options.A}}
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="options" value="optionB">
+                <label class="form-check-label" for="optionB">
+                {{poll.options.B}}
+                </label>
+            </div>
+            {{#if poll.options.C}}
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="options" value="optionC">
+                <label class="form-check-label" for="optionC">
+                {{poll.options.C}}
+                </label>
+            </div>
+            {{/if}}
+            {{#if poll.options.D}}
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="options" value="optionD">
+                <label class="form-check-label" for="optionD">
+                {{poll.options.D}}
+                </label>
+            </div>
+            {{/if}}
+            <button class="btn btn-success btn mt-3" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

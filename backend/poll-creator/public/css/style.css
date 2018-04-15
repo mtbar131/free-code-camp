@@ -1,0 +1,17 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-check-input {
+    height: 18px;
+    width: 18px;
+    margin-top: 3px;
+}
+
+.createdOn {
+    font-size: 11px;
+}
+
+#button-container {
+    margin-top: -65px;
+}

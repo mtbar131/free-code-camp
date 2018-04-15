@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#welcome-wrapper {
+    margin-top: 33.3vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    text-align: center
+}
+
+input {
+    width: 39vw;
+    height: 4vh;
+    border-radius: 5px;
+    font-size: 87.5%;
+    padding-left: 5px;
+    font-family: inherit;
+}
+
+button {
+    width: 6.95vw;
+    height: 5.15vh;
+    border-radius: 5px;
+    font: inherit;
+    color: white;
+    border-color: blue;
+    background-color: blue;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#desc {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#recent {
+    font-size: 12.5px;
+    vertical-align: middle;
+}
+
+.result {
+    border: black 1px solid;
+    width: 66.6vw;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 20px 0 20px 0;
+}
+
+.result:hover {
+    -webkit-box-shadow: 1.5px 3px 2px 0px rgba(198, 198, 230, 1);
+    -moz-box-shadow: 1.5px 3px 2px 0px rgba(198, 198, 230, 1);
+    box-shadow: 1.5px 3px 2px 0px rgba(198, 198, 230, 1);
+}
+
+.result-title {
+    font-size: 17.5px;
+    margin: 15px 5px 15px 5px;
+    display: inline;
+}
+
+.result-link {
+    color: blue;
+    font-size: 11px;
+}
+
+.result-link:hover {
+    text-decoration: none;
+    color: #0088cc;
+}
+
+.pagin {
+    margin-bottom: 25px;
+    background-color: white;
+    border-color: blue;
+}
+
+.next-link {
+    color: blue;
+}
+
+.next-link:hover {
+    text-decoration: none;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    input {
+        width: 75vw;
+    }
+}
+
+@media all and (max-width: 480px) {
+    input {
+        width: 55vw;
+    }
+}

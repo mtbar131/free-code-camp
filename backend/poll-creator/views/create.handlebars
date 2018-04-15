@@ -1,0 +1,34 @@
+<div class="card card-body w-75">
+    <h1>Create Poll</h1>
+    <form action="/polls" method="POST">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" placeholder="Which came first, the chicken or the egg?" required>
+        </div>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">A</div>
+            </div>
+            <input type="text" class="form-control" name="optionA" placeholder="Chicken" required>
+        </div>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">B</div>
+            </div>
+            <input type="text" class="form-control" name="optionB" placeholder="Egg" required>
+        </div>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">C</div>
+            </div>
+            <input type="text" class="form-control" name="optionC" placeholder="(Optional)">
+        </div>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">D</div>
+            </div>
+            <input type="text" class="form-control" name="optionD" placeholder="(Optional)">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

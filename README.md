@@ -1,5 +1,5 @@
 # Free Code Camp
-> Click <a href="https://www.freecodecamp.org/mattpkobus/front-end-certification">here</a> to view certification
+> 500+ hours of interactive content and 13 projects
 
 ### Frontend projects
 * Quote generator: https://codepen.io/Mattpk88/full/GxdEWP/
